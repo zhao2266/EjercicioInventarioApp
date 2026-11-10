@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="12" prefWidth="360" prefHeight="320"
+      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.ejercicioinventarioapp.LoginController">
+    <padding><Insets top="30" right="40" bottom="30" left="40"/></padding>
+    <Label text="Iniciar sesión" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <TextField fx:id="txtUsuario" promptText="Usuario"/>
+    <PasswordField fx:id="txtPassword" promptText="Contraseña" onAction="#onLogin"/>
+    <Button text="Iniciar sesión" maxWidth="Infinity" defaultButton="true" onAction="#onLogin"/>
+</VBox>
